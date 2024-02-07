@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1 id="title">Hello</h1>
+        <h2>please inter your tall and your weight :</h2>
+        <h3 id="math"></h3>
+        <input id="weight_input" type="text" value="weight">
+        <br>
+        <input id="tall_input" type="text" value="tall">
+        <br>
+        <button id="btn">submit</button>
+        <div id="result_id">
+            <h1>Your mass is :</h1>
+            <h1 id="mass_id"></h1>
+            <br>
+            <h1>Your type :</h1>
+            <h1 id="h1"></h1>
+
+        </div>
+        <script>
+            var result = document.getElementById("h1").innerHTML
+            
+           
+           document.getElementById("btn").addEventListener("click", function(){
+            var weight = document.getElementById("weight_input").value
+            let tall = document.getElementById("tall_input").value
+            var mass = weight/(tall*tall)
+            document.getElementById("mass_id").innerHTML = mass
+            switch(true){
+            case(mass<18):document.getElementById("h1").innerHTML = "smole"
+                console.log(1)
+                break
+            case(mass>18 && mass<24.9): document.getElementById("h1").innerHTML = "the best weight"
+                console.log(2)
+                
+                break
+            case(mass<29.9 && mass>25): document.getElementById("h1").innerHTML = "add weight"
+                console.log(2)
+            
+                break
+            default: document.getElementById("h1").innerHTML ="please try agin"
+            console.log(4)
+           }
+
+           })
+           
+        </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(13, 7, 0, 0.791);
+}
+#container{
+    position: absolute;
+    background-color: rgb(39, 95, 76);
+    
+    width: 100%;
+    height: 90%;
+    border-radius: 10%;
+}
+#divRoot{
+    border-radius: 10%;
+    position: absolute;
+    background-color: black;
+    height: 90%;
+    width: 95%;
+
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    border: 0.1   vh solid black;
+}
+
+.hoverButton:hover{
+    background-color: rgb(28, 252, 28);
+    box-shadow: 0.5vh 0.5vh;
+    transition: all 0.5s;
+    height:7vh ;
+
+}
+#Plus{
+    height: 6vh;
+    margin-top: 2vh;
+}
+#addMission{
+    background-color: rgb(4, 133, 47);
+    display: flex;
+    justify-content: space-around;
+
+}
+
+h1{
+    text-align: center;    
+}
